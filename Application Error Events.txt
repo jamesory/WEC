@@ -1,0 +1,6 @@
+<QueryList>
+  <Query Id="0" Path="Application">
+    <Select Path="Application">*[System[Provider[@Name='Application Error' or @Name='Application Hang'] and (Level=2) and (EventID=1000 or EventID=1002)]]</Select>
+    <Select Path="Application">*[System[Provider[@Name='Windows Error Reporting'] and Level=4 and EventID=1001]]</Select>
+  </Query>
+</QueryList>
